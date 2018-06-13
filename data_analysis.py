@@ -4,6 +4,9 @@ import json
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
+from io import BytesIO
+import base64
 
 application = Flask(__name__)
 
@@ -14,7 +17,6 @@ def hello():
 @application.route("/csv", methods=['POST'])
 def getCSV():
     data = json.loads(request.data)
-    #rint(request.data)
     responseContent = data["responseContent"]
     f = csv.writer(open("data.csv", "w"))
     f.writerow(list(responseContent[0].keys()))
@@ -30,6 +32,10 @@ def getCSV():
 @application.route("/oneVarNum", methods=['POST'])
 def oneVarNum():
     print("doing analysis for one variable number")
+    data = json.loads(request.data)
+    questionResponses = data["questionResponses"]
+    s = pd.Series(questionResponses)
+
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0', port=8081)
