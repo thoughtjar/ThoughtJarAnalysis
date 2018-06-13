@@ -1,13 +1,7 @@
 from flask import Flask, request, send_file
 import csv
 import json
-'''
-import boto3
 
-s3 = boto3.client('s3')
-filename = "data.csv"
-bucket_name = "thoughtjardata"
-'''
 application = Flask(__name__)
 
 @application.route("/")
@@ -26,13 +20,13 @@ def getCSV():
         for key in responseContent[0].keys():
             row.append(response[key])
         f.writerow(row)
-    #s3.upload_file(filename, bucket_name, filename)
-
     with open('data.csv') as f:
         s = f.read() + '\n'
     return s
 
-    #return "hi"
+@application.route("/oneVarNum", methods=['POST'])
+def oneVarNum():
+    print("doing analysis for one variable number")
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0', port=8081)
