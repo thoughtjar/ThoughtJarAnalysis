@@ -32,8 +32,13 @@ def getCSV():
 @application.route("/oneVarNum", methods=['POST'])
 def oneVarNum():
     data = json.loads(request.data)
-    questionResponses = data["questionResponses"]
-    s = pd.Series(questionResponses)
+    firstResponses = data["first"]
+    firstQuestionResponses = []
+    for stringNum in firstResponses:
+        firstQuestionResponses.append(int(stringNum))
+    print(firstQuestionResponses)
+    print(type(firstQuestionResponses))
+    s = pd.Series(firstQuestionResponses)
     fig = plt.figure()
     plot = sns.boxplot(x=s)
     plot.set(xlabel='Temporary Question Name')
