@@ -31,11 +31,18 @@ def getCSV():
 
 @application.route("/oneVarNum", methods=['POST'])
 def oneVarNum():
-    print("doing analysis for one variable number")
     data = json.loads(request.data)
     questionResponses = data["questionResponses"]
     s = pd.Series(questionResponses)
-
+    fig = plt.figure()
+    plot = sns.boxplot(x=s)
+    plot.set(xlabel='Temporary Question Name')
+    imgdata = BytesIO()
+    fig.savefig(imgdata, format='png')
+    imgdata.seek(0)
+    src = base64.encodebytes(imgdata.getvalue()).decode()
+    print(src)
+    return src
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0', port=8081)
