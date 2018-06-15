@@ -32,6 +32,7 @@ def getCSV():
 @application.route("/oneVarNum", methods=['POST'])
 def oneVarNum():
     data = json.loads(request.data)
+    print(data)
     firstResponses = data["first"]
     firstQuestionResponses = []
     for stringNum in firstResponses:
@@ -41,7 +42,7 @@ def oneVarNum():
     s = pd.Series(firstQuestionResponses)
     fig = plt.figure()
     plot = sns.boxplot(x=s)
-    plot.set(xlabel='Temporary Question Name')
+    plot.set(xlabel=data["firstQuestionField"])
     imgdata = BytesIO()
     fig.savefig(imgdata, format='png')
     imgdata.seek(0)
