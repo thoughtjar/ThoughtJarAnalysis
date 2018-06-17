@@ -98,29 +98,36 @@ def oneVarMC():
 def oneVarLongText():
     data = json.loads(request.data)
     srcList = []
-    sentiment_analysis = {
-        "very_positive": 0,
-        "somewhat_positive": 0,
-        "neutral": 0,
-        "somewhat_negative": 0,
-        "very_negative": 0
-    }
+    sentiment_analysis = []
     print(data)
     for response in data["first"]:
         polarity = TextBlob(response).sentiment.polarity
         print(polarity)
         if(polarity < -0.4):
-            sentiment_analysis["very_negative"] += 1
+            sentiment_analysis.append("very negative")
         elif(polarity < -0.1):
-            sentiment_analysis["somewhat_negative"] += 1
+            sentiment_analysis.append("somewhat negative")
         elif(polarity < 0.1):
-            sentiment_analysis["neutral"] += 1
+            sentiment_analysis.append("neutral")
         elif(polarity < 0.4):
-            sentiment_analysis["somewhat_positive"] += 1
+            sentiment_analysis.append("somewhat positive")
         else:
-            sentiment_analysis["very_positive"] += 1
+            sentiment_analysis.append("very positive")
     print(sentiment_analysis)
-    return("oneVarLongText success")
+    sentiment_data = pd.Series(sentiment_analysis)
+    fig = plt.figure()
+    plot = sns.countplot(sentiment_data, order=["very negative", "somewhat negative", "neutral", "somewhat positive", "very positive"])
+    title = "Sentiment Analysis: " + data["firstQuestionField"]
+    plot.set(xlabel=title, ylabel="frequency")
+    plot.set_xticklabels(plot.get_xticklabels(), fontsize=8)
+    imgdata = BytesIO()
+    fig.savefig(imgdata, format='png')
+    imgdata.seek(0)
+    src = base64.encodebytes(imgdata.getvalue()).decode()
+    print(src)
+    srcList.append(src)
+    srcData = {"srcList": srcList}
+    return jsonify(srcData)
 
 
 
