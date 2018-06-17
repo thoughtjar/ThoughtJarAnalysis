@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, jsonify
 import csv
 import json
 import numpy as np
@@ -7,6 +7,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
+import collections
+
 
 application = Flask(__name__)
 
@@ -31,6 +33,7 @@ def getCSV():
 
 @application.route("/oneVarNum", methods=['POST'])
 def oneVarNum():
+    srcList = []
     data = json.loads(request.data)
     print(data)
     firstResponses = data["first"]
@@ -48,7 +51,37 @@ def oneVarNum():
     imgdata.seek(0)
     src = base64.encodebytes(imgdata.getvalue()).decode()
     print(src)
-    return src
+    srcList.append(src)
+    srcData = {"srcList": srcList}
+    return jsonify(srcData)
+
+@application.route("/oneVarMC", methods=['POST'])
+def oneVarMC():
+    srcData = {}
+    data = json.loads(request.data)
+    print(data)
+    fig = plt.figure()
+    plot = sns.countplot(data["first"])
+    plot.set(xlabel=data["firstQuestionField"], ylabel="frequency")
+    imgdata = BytesIO()
+    fig.savefig(imgdata, format='png')
+    imgdata.seek(0)
+
+    print (base64.encodebytes(imgdata.getvalue()).decode())
+    print ("Content-type: image/png\n")
+    uri = 'data:image/png;base64,' + base64.encodebytes(imgdata.getvalue()).decode()
+    print ('<img src = "%s"/>' % uri)
+    return "success"
+
+
+    #piechart below
+    """ {‘first’: [‘Brazil’, ‘Brazil’, ‘Brazil’, ‘Portugal’, ‘Germany’, ‘Germany’, ‘Argentina’, ‘Argentina’, ‘Brazil’, ‘Germany’], ‘firstQuestionField’: ‘Who do you think will win the World Cup?’}"""
+    responseFrequencyComplete = collections.Counter(data['first'])
+    responseFrequencyKeys = responseFrequencyComplete.keys()
+    responseFrequencyValues = responseFrequencyComplete.values()
+
+    pieChartDF = df = pd.DataFrame({'mass': responseFrequencyValues}, index = responseFrequencyKeys)
+
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0', port=8081)
