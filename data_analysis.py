@@ -108,13 +108,14 @@ def oneVarLongText():
     print(data)
     for response in data["first"]:
         polarity = TextBlob(response).sentiment.polarity
-        if(polarity < -0.6):
+        print(polarity)
+        if(polarity < -0.4):
             sentiment_analysis["very_negative"] += 1
-        elif(polarity < -0.2):
+        elif(polarity < -0.1):
             sentiment_analysis["somewhat_negative"] += 1
-        elif(polarity < 0.2):
+        elif(polarity < 0.1):
             sentiment_analysis["neutral"] += 1
-        elif(polarity < 0.6):
+        elif(polarity < 0.4):
             sentiment_analysis["somewhat_positive"] += 1
         else:
             sentiment_analysis["very_positive"] += 1
