@@ -41,8 +41,8 @@ def oneVarNum():
     firstQuestionResponses = []
     for stringNum in firstResponses:
         firstQuestionResponses.append(int(stringNum))
-    print(firstQuestionResponses)
-    print(type(firstQuestionResponses))
+
+    # boxplot
     s = pd.Series(firstQuestionResponses)
     fig = plt.figure()
     plot = sns.boxplot(x=s)
@@ -53,6 +53,14 @@ def oneVarNum():
     src = base64.encodebytes(imgdata.getvalue()).decode()
     print(src)
     srcList.append(src)
+    #histogram
+    #sample request {'first': ['3', '1', '8', '4', '3'], 'firstQuestionField': 'How many games do you think Portugal win?'}
+
+
+    # doing in notebook then will paste here later
+
+
+
     srcData = {"srcList": srcList}
     return jsonify(srcData)
 
@@ -129,6 +137,8 @@ def oneVarLongText():
             sentiment_subjectivity.append("somewhat subjective")
         else:
             sentiment_subjectivity.append("very subjective")
+
+    #sentiment analysis
     sentiment_data = pd.Series(sentiment_analysis)
     fig = plt.figure()
     plot = sns.countplot(sentiment_data, order=["very negative", "somewhat negative", "neutral", "somewhat positive", "very positive"])
@@ -141,6 +151,8 @@ def oneVarLongText():
     src = base64.encodebytes(imgdata.getvalue()).decode()
     print(src)
     srcList.append(src)
+
+    #subjectivity analysis
     subjectivity = pd.Series(sentiment_subjectivity)
     fig = plt.figure()
     plot = sns.countplot(subjectivity, order=["objective", "somewhat subjective", "very subjective"])
@@ -161,7 +173,27 @@ def twoVarNumNum():
     data = json.loads(request.data)
     print(data)
     srcList = []
-    return("success")
+    firstQuestionResponses = []
+    secondQuestionResponses = []
+    for stringNum in data["first"]:
+        firstQuestionResponses.append(int(stringNum))
+    for stringNum in data["second"]:
+        secondQuestionResponses.append(int(stringNum))
+    # scatterplot with regression
+    first = pd.Series(firstQuestionResponses)
+    second = pd.Series(secondQuestionResponses)
+    fig = plt.figure()
+    plot = sns.regplot(x=first, y=second)
+    plot.set(xlabel=data["firstQuestionField"], ylabel=data["secondQuestionField"])
+    imgdata = BytesIO()
+    fig.savefig(imgdata, format="png")
+    imgdata.seek(0)
+    src = base64.encodebytes(imgdata.getvalue()).decode()
+    print(src)
+    srcList.append(src)
+
+    srcData = {"srcList": srcList}
+    return jsonify(srcData)
 
 
 if __name__ == "__main__":
