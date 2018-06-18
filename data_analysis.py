@@ -70,20 +70,6 @@ def oneVarMC():
     src = base64.encodebytes(imgdata.getvalue()).decode()
     print(src)
     srcList.append(src)
-    srcData = {"srcList": srcList}
-    return jsonify(srcData)
-
-    '''
-    #pandas piechart below
-    hardcodedData = {'first': ['Brazil', 'Brazil', 'Brazil', 'Portugal', 'Germany', 'Germany', 'Argentina', 'Argentina', 'Brazil', 'Germany'], 'firstQuestionField': 'Who do you think will win the World Cup?'}
-    responseFrequencyComplete = collections.Counter(hardcodedData['first'])
-    responseFrequencyKeys = responseFrequencyComplete.keys()
-    responseFrequencyValues = responseFrequencyComplete.values()
-
-    pieChartDF = pd.DataFrame({'vals': responseFrequencyValues}, index = responseFrequencyKeys)
-    pieChartVisual = pieChartDF.plot.pie(y='vals', figsize=(5, 5))
-    #^^^^^^ that should be the image if the code works
-    print(type(pieChartVisual))
 
     #matplotlib piechart
     hardcodedData = {'first': ['Brazil', 'Brazil', 'Brazil', 'Portugal', 'Germany', 'Germany', 'Argentina', 'Argentina', 'Brazil', 'Germany'], 'firstQuestionField': 'Who do you think will win the World Cup?'}
@@ -91,8 +77,29 @@ def oneVarMC():
     responseFrequencyKeys = responseFrequencyComplete.keys()
     responseFrequencyValues = responseFrequencyComplete.values()
 
-    pieChartDF = pd.DataFrame(, index = responseFrequencyKeys)
-    '''
+    labels = responseFrequencyKeys
+    sizes = responseFrequencyComplete.values()
+    # no explode
+    explode = (0, 0, 0, 0)
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+            shadow=True, startangle=90)
+    # Equal aspect ratio ensures that pie is drawn as a circle
+    ax1.axis('equal')
+    plt.tight_layout()
+   # plt.show() shows the plot
+
+    figfile = BytesIO()
+    plt.savefig(figfile, format='png')
+    figfile.seek(0)
+    #figdata_png is the x64 string
+    figdata_png = base64.b64encode(figfile.getvalue()).decode('ascii')
+    srcList.append(figdata_png)
+
+    srcData = {"srcList": srcList}
+    return jsonify(srcData)
+
+
 
 @application.route("/oneVarLongText", methods=['POST'])
 def oneVarLongText():
