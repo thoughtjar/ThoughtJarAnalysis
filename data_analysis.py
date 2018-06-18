@@ -99,10 +99,13 @@ def oneVarLongText():
     data = json.loads(request.data)
     srcList = []
     sentiment_analysis = []
+    sentiment_subjectivity = []
     print(data)
     for response in data["first"]:
         polarity = TextBlob(response).sentiment.polarity
+        subjectivity = TextBlob(response).sentiment.subjectivity
         print(polarity)
+        print(subjectivity)
         if(polarity < -0.4):
             sentiment_analysis.append("very negative")
         elif(polarity < -0.1):
@@ -113,7 +116,12 @@ def oneVarLongText():
             sentiment_analysis.append("somewhat positive")
         else:
             sentiment_analysis.append("very positive")
-    print(sentiment_analysis)
+        if(subjectivity < 0.1):
+            sentiment_subjectivity.append("objective")
+        elif(subjectivity < 0.4):
+            sentiment_subjectivity.append("somewhat subjective")
+        else:
+            sentiment_subjectivity.append("very subjective")
     sentiment_data = pd.Series(sentiment_analysis)
     fig = plt.figure()
     plot = sns.countplot(sentiment_data, order=["very negative", "somewhat negative", "neutral", "somewhat positive", "very positive"])
@@ -126,9 +134,27 @@ def oneVarLongText():
     src = base64.encodebytes(imgdata.getvalue()).decode()
     print(src)
     srcList.append(src)
+    subjectivity = pd.Series(sentiment_subjectivity)
+    fig = plt.figure()
+    plot = sns.countplot(subjectivity, order=["objective", "somewhat subjective", "very subjective"])
+    title = "Subjectivity Analysis: " + data["firstQuestionField"]
+    plot.set(xlabel=title, ylabel="frequency")
+    plot.set_xticklabels(plot.get_xticklabels(), fontsize=8)
+    imgdata = BytesIO()
+    fig.savefig(imgdata, format='png')
+    imgdata.seek(0)
+    src = base64.encodebytes(imgdata.getvalue()).decode()
+    print(src)
+    srcList.append(src)
     srcData = {"srcList": srcList}
     return jsonify(srcData)
 
+@application.route("/twoVarNumNum", methods=['POST'])
+def twoVarNumNum():
+    data = json.loads(request.data)
+    print(data)
+    srcList = []
+    return("success")
 
 
 if __name__ == "__main__":
