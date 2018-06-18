@@ -55,7 +55,7 @@ def oneVarNum():
     srcList.append(src)
     #histogram
     #sample request {'first': ['3', '1', '8', '4', '3'], 'firstQuestionField': 'How many games do you think Portugal win?'}
-
+    
 
     # doing in notebook then will paste here later
 
@@ -80,8 +80,8 @@ def oneVarMC():
     srcList.append(src)
 
     #matplotlib piechart
-    hardcodedData = {'first': ['Brazil', 'Brazil', 'Brazil', 'Portugal', 'Germany', 'Germany', 'Argentina', 'Argentina', 'Brazil', 'Germany'], 'firstQuestionField': 'Who do you think will win the World Cup?'}
-    responseFrequencyComplete = collections.Counter(hardcodedData['first'])
+    #hardcodedData = {'first': ['Brazil', 'Brazil', 'Brazil', 'Portugal', 'Germany', 'Germany', 'Argentina', 'Argentina', 'Brazil', 'Germany'], 'firstQuestionField': 'Who do you think will win the World Cup?'}
+    responseFrequencyComplete = collections.Counter(data['first'])
     responseFrequencyKeys = responseFrequencyComplete.keys()
     responseFrequencyValues = responseFrequencyComplete.values()
 
