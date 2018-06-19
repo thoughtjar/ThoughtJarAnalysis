@@ -10,7 +10,6 @@ import base64
 import collections
 from textblob import TextBlob
 
-
 application = Flask(__name__)
 
 @application.route("/")
@@ -55,7 +54,7 @@ def oneVarNum():
     srcList.append(src)
     #histogram
     #sample request {'first': ['3', '1', '8', '4', '3'], 'firstQuestionField': 'How many games do you think Portugal win?'}
-    
+
 
     # doing in notebook then will paste here later
 
