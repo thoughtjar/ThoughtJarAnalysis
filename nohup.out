@@ -1,0 +1,409 @@
+ * Serving Flask app "data_analysis" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jun/2018 22:51:43] "POST /csv HTTP/1.1" 200 -
+[2018-06-19 22:51:48,999] ERROR in app: Exception on /oneVarNum [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "data_analysis.py", line 46, in oneVarNum
+    fig = plt.figure()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py", line 548, in figure
+    **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 1044, in new_figure_manager_given_figure
+    window = Tk.Tk(className="matplotlib")
+  File "/home/ubuntu/anaconda3/lib/python3.6/tkinter/__init__.py", line 2017, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+127.0.0.1 - - [19/Jun/2018 22:51:49] "POST /oneVarNum HTTP/1.1" 500 -
+24.6.160.178 - - [19/Jun/2018 22:55:32] "GET / HTTP/1.1" 200 -
+24.6.160.178 - - [19/Jun/2018 22:55:32] "GET /favicon.ico HTTP/1.1" 404 -
+ * Serving Flask app "data_analysis" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jun/2018 23:02:27] "POST /csv HTTP/1.1" 200 -
+[2018-06-19 23:02:32,637] ERROR in app: Exception on /oneVarNum [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "data_analysis.py", line 46, in oneVarNum
+    fig = plt.figure()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py", line 548, in figure
+    **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 1044, in new_figure_manager_given_figure
+    window = Tk.Tk(className="matplotlib")
+  File "/home/ubuntu/anaconda3/lib/python3.6/tkinter/__init__.py", line 2017, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+127.0.0.1 - - [19/Jun/2018 23:02:32] "POST /oneVarNum HTTP/1.1" 500 -
+[2018-06-19 23:02:34,540] ERROR in app: Exception on /oneVarNum [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "data_analysis.py", line 46, in oneVarNum
+    fig = plt.figure()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py", line 548, in figure
+    **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 1044, in new_figure_manager_given_figure
+    window = Tk.Tk(className="matplotlib")
+  File "/home/ubuntu/anaconda3/lib/python3.6/tkinter/__init__.py", line 2017, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+127.0.0.1 - - [19/Jun/2018 23:02:34] "POST /oneVarNum HTTP/1.1" 500 -
+[2018-06-19 23:02:35,088] ERROR in app: Exception on /oneVarNum [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "data_analysis.py", line 46, in oneVarNum
+    fig = plt.figure()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py", line 548, in figure
+    **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 1044, in new_figure_manager_given_figure
+    window = Tk.Tk(className="matplotlib")
+  File "/home/ubuntu/anaconda3/lib/python3.6/tkinter/__init__.py", line 2017, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+127.0.0.1 - - [19/Jun/2018 23:02:35] "POST /oneVarNum HTTP/1.1" 500 -
+[2018-06-19 23:02:35,208] ERROR in app: Exception on /oneVarNum [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "data_analysis.py", line 46, in oneVarNum
+    fig = plt.figure()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/pyplot.py", line 548, in figure
+    **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backend_bases.py", line 161, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 1044, in new_figure_manager_given_figure
+    window = Tk.Tk(className="matplotlib")
+  File "/home/ubuntu/anaconda3/lib/python3.6/tkinter/__init__.py", line 2017, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+127.0.0.1 - - [19/Jun/2018 23:02:35] "POST /oneVarNum HTTP/1.1" 500 -
+ * Serving Flask app "data_analysis" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8081/ (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jun/2018 23:45:54] "POST /csv HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2018 23:46:10] "POST /csv HTTP/1.1" 200 -
+{'first': ['10', '6'], 'firstQuestionField': 'rate me'}
+iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAPYQAAD2EBqD+naQAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBo
+dHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAAGqdJREFUeJzt3XlwnWX5+OH7JCVLS1MGkC7QFgqy
+F2hBKlWHjuBgBUQZWRRZxAURxlZkHfZBrKCAyjCCDrQMIAjDpggUKIvSqSwFyiqURWRHRzDtQFua
+PN8//DU/Ai00aZKT0/u6ZjqT8+a8yf3w8J7zmXPStFJKKQEAQBp11R4AAIC+JQABAJIRgAAAyQhA
+AIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCM
+AAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAA
+yQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEI
+AJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIR
+gAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASGZAtQeoZe3t7fHqq6/G4MGDo1KpVHscAGAllFJi
+wYIFMWLEiKiry/lamABcBa+++mqMHDmy2mMAAN3w0ksvxQYbbFDtMapCAK6CwYMHR8T//gdqaWmp
+8jQAwMpobW2NkSNHdjyPZyQAV8Gyt31bWloEIADUmMw/vpXzjW8AgMQEIABAMgIQACAZAQgAkIwA
+BABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJ
+CEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgA
+kIwABABIRgACACQjAAEAkhGAAADJDKj2ALC6KaXEokWLqj0Gq6CUEosXL46IiMbGxqhUKlWeiFXR
+1NRkD+EDBCD0sEWLFsXkyZOrPQbw/9xyyy3R3Nxc7TGgX/EWMABAMl4BhF60cLuvR6lzmdWctvdi
+8LyrIiJiwbb7R9SvUeWB6KpK+9JY85Erqz0G9FuemaAXlboB4qHW1a9hD2tQqfYA0M95CxgAIBkB
+CACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS
+EYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA
+IBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA
+AQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy
+AhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIA
+JCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJDOg2gPwYaWUWLRoUURENDU1
+RaVSqfJEANB3PA/2Pq8A9kOLFi2KyZMnx+TJkzsuAADIwvNg7xOAAADJCEAAgGQEIABAMgIQACAZ
+AQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEA
+khGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQ
+ACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQj
+AAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABA
+MgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgAC
+ACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhlQ7QH4sFJKx8eL
+Fi2q4iR0R6c9e99eAn3I42hNe/+eFY+jvUIAdsHixYtj8eLFHbdbW1t77fss89WvfrVXvgd9pH1p
+RDRUewrIp31px4ceR2vb4sWLY+DAgdUeY7XjLeAumDZtWgwZMqTjz8iRI6s9EgBAl3kFsAtOOOGE
+OOqoozput7a29koENjY2dnx8/fXXR1NTU49/D3rPokWL/v8rDnUuMaiK9117Hkdrz/sfR9//nEjP
+8ezUBY2NjX3yP2KlUun4uKmpKZqbm3v9e9JL3reXQB/yOLraqHgc7RXeAgYASEYAAgAkIwABAJIR
+gAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAg
+GQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwAB
+AJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDIC
+EAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAk
+IwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAA
+QDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJDMgGoPwIc1
+NTXFLbfc0vExAGTiebD3CcB+qFKpRHNzc7XHAICq8DzY+7wFDACQjAAEAEhGAAIAJCMAAQCSEYAA
+AMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkB
+CACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS
+EYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA
+IBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA
+AQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy
+AhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkMqPYAsDqrtC+NUu0h6Lq295b/MTWj0r602iNA
+vyYAoRet+ciV1R6BVTR43lXVHgGgx3kLGAAgGa8AQg9ramqKW265pdpjsApKKbF48eKIiGhsbIxK
+pVLliVgVTU1N1R4B+h0BCD2sUqlEc3NztcdgFQ0cOLDaIwD0Gm8BAwAkIwABAJIRgAAAyQhAAIBk
+BCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQA
+SEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhA
+AIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkM6DaA9SyUkpERLS2tlZ5EgBgZS173l72PJ6RAFwF
+CxYsiIiIkSNHVnkSAKCrFixYEEOGDKn2GFVRKZnzdxW1t7fHq6++GoMHD45KpdKjX7u1tTVGjhwZ
+L730UrS0tPTo1+4PrK/2re5rtL7at7qv0fq6r5QSCxYsiBEjRkRdXc6fhvMK4Cqoq6uLDTbYoFe/
+R0tLy2p5YS9jfbVvdV+j9dW+1X2N1tc9WV/5WyZn9gIAJCYAAQCSqT/ttNNOq/YQLF99fX1MmjQp
+BgxYPd+pt77at7qv0fpq3+q+Ruuju/wlEACAZLwFDACQjAAEAEhGAAIAJCMAAQCSEYBV8sorr8Q3
+v/nNWGeddaK5uTnGjh0bDz744Eeec/fdd8f48eOjsbExNtlkk5gxY0bfDNsNXV3f3XffHZVK5UN/
+Xn/99T6ceuVsuOGGy531iCOOWOE511xzTWy++ebR1NQUY8eOjZtvvrkPJ+66rq5xxowZH7pvU1NT
+H0+98tra2uLkk0+OjTbaKJqbm2PjjTeOM84442P/XdBauQa7s75augaXWbBgQUydOjVGjx4dzc3N
+MXHixHjggQc+8pxa2cOIrq+vv+/hX/7yl9hzzz1jxIgRUalU4oYbbuj0+VJKnHLKKTF8+PBobm6O
+XXfdNebPn/+xX/eCCy6IDTfcMJqammLChAlx//3399YSVi+FPvef//ynjB49uhxyyCHlvvvuK88/
+/3yZOXNmefbZZ1d4zvPPP18GDhxYjjrqqPLkk0+W888/v9TX15dbb721DydfOd1Z31133VUiojz9
+9NPltdde6/jT1tbWh5OvnDfffLPTjLfffnuJiHLXXXct9/6zZ88u9fX15eyzzy5PPvlkOemkk8oa
+a6xRHnvssb4dvAu6usbp06eXlpaWTue8/vrrfTt0F5x55pllnXXWKTfddFN54YUXyjXXXFPWXHPN
+8qtf/WqF59TSNdid9dXSNbjMvvvuW7bccstyzz33lPnz55dTTz21tLS0lJdffnm596+lPSyl6+vr
+73t48803lxNPPLFcd911JSLK9ddf3+nzP/vZz8qQIUPKDTfcUObNm1e+/OUvl4022qi8++67K/ya
+V111VWloaCiXXHJJeeKJJ8p3v/vdstZaa5U33nijt5dT8wRgFRx33HHls5/9bJfOOfbYY8tWW23V
+6dh+++1Xdtttt54crUd0Z33LHrjeeuutXpqq90yZMqVsvPHGpb29fbmf33fffcvuu+/e6diECRPK
+YYcd1hfj9YiPW+P06dPLkCFD+niq7tt9993LoYce2unY3nvvXQ444IAVnlNL12B31ldr1+A777xT
+6uvry0033dTp+Pjx48uJJ5643HNqaQ+7s75a2sMPBmB7e3sZNmxY+fnPf95x7O233y6NjY3lyiuv
+XOHX2XHHHcsRRxzRcbutra2MGDGiTJs2rXcGX414C7gK/vjHP8YOO+wQ++yzT6y33noxbty4+N3v
+fveR58yZMyd23XXXTsd22223mDNnTm+O2i3dWd8y2223XQwfPjy+8IUvxOzZs3t50lW3ZMmSuPzy
+y+PQQw+NSqWy3PvU0t4tz8qsMSJi4cKFMXr06Bg5cmTstdde8cQTT/ThlF0zceLEmDVrVjzzzDMR
+ETFv3ry49957Y/LkySs8p5b2sTvrW6ZWrsGlS5dGW1vbh37UoLm5Oe69997lnlNLe9id9S1TK3v4
+fi+88EK8/vrrnfZnyJAhMWHChBXuz5IlS2Lu3Lmdzqmrq4tdd921X+5pfyMAq+D555+P3/zmN/HJ
+T34yZs6cGYcffnj88Ic/jEsvvXSF57z++usxdOjQTseGDh0ara2t8e677/b2yF3SnfUNHz48Lrzw
+wrj22mvj2muvjZEjR8akSZPioYce6sPJu+6GG26It99+Ow455JAV3mdFe9dffi7n46zMGjfbbLO4
+5JJL4sYbb4zLL7882tvbY+LEifHyyy/33aBdcPzxx8f+++8fm2++eayxxhoxbty4mDp1ahxwwAEr
+PKeWrsHurK/WrsHBgwfHTjvtFGeccUa8+uqr0dbWFpdffnnMmTMnXnvtteWeU0t72J311doevt+y
+x8OuPFb++9//jra2tpp+fK0m/7ZKFbS3t8cOO+wQP/3pTyMiYty4cfH444/HhRdeGAcffHCVp1t1
+3VnfZpttFptttlnH7YkTJ8Zzzz0X5513Xlx22WV9Mnd3XHzxxTF58uQYMWJEtUfpNSuzxp122il2
+2mmnjtsTJ06MLbbYIi666KI444wz+mLMLrn66qvjiiuuiN///vex1VZbxSOPPBJTp06NESNGrBbX
+YHfWV4vX4GWXXRaHHnporL/++lFfXx/jx4+Pr3/96zF37txqj9Yjurq+WtxDqscrgFUwfPjw2HLL
+LTsd22KLLeKf//znCs8ZNmxYvPHGG52OvfHGG9HS0hLNzc29Mmd3dWd9y7PjjjvGs88+25Oj9agX
+X3wx7rjjjvjOd77zkfdb0d4NGzasN8frESu7xg9a9qpTf92/Y445puNVsrFjx8aBBx4YP/rRj2La
+tGkrPKeWrsHurG95+vs1uPHGG8c999wTCxcujJdeeinuv//+eO+992LMmDHLvX8t7WFE19e3PP19
+D5dZ9njYlcfKddddN+rr62v28bXaBGAVfOYzn4mnn36607FnnnkmRo8evcJzdtppp5g1a1anY7ff
+fnunV136i+6sb3keeeSRGD58eE+O1qOmT58e6623Xuy+++4feb9a2rsPWtk1flBbW1s89thj/Xb/
+3nnnnair6/zwV19fH+3t7Ss8p5b2sTvrW57+fg0uM2jQoBg+fHi89dZbMXPmzNhrr72We79a2sP3
+W9n1LU+t7OFGG20Uw4YN67Q/ra2tcd99961wfxoaGmL77bfvdE57e3vMmjWr3+9pv1Dtv4WS0f33
+318GDBhQzjzzzDJ//vxyxRVXlIEDB5bLL7+84z7HH398OfDAAztuL/v1Bcccc0x56qmnygUXXNBv
+f31Bd9Z33nnnlRtuuKHMnz+/PPbYY2XKlCmlrq6u3HHHHdVYwsdqa2sro0aNKscdd9yHPnfggQeW
+448/vuP27Nmzy4ABA8ovfvGL8tRTT5VTTz213/8amFK6tsbTTz+9zJw5szz33HNl7ty5Zf/99y9N
+TU3liSee6MuRV9rBBx9c1l9//Y5fk3LdddeVddddtxx77LEd96nla7A766u1a7CUUm699dZyyy23
+lOeff77cdtttZdttty0TJkwoS5YsKaXU9h6W0vX19fc9XLBgQXn44YfLww8/XCKinHvuueXhhx8u
+L774Yinlf78GZq211io33nhjefTRR8tee+31oV8D8/nPf76cf/75Hbevuuqq0tjYWGbMmFGefPLJ
+8r3vfa+stdZa/frXUPUXArBK/vSnP5Wtt966NDY2ls0337z89re/7fT5gw8+uOy8886djt11111l
+u+22Kw0NDWXMmDFl+vTpfTdwF3V1fWeddVbZeOONS1NTU1l77bXLpEmTyp133tnHU6+8mTNndvy+
+rQ/aeeedy8EHH9zp2NVXX1023XTT0tDQULbaaqvy5z//uY8m7b6urHHq1Kll1KhRpaGhoQwdOrR8
+6UtfKg899FAfTts1ra2tZcqUKWXUqFGlqampjBkzppx44oll8eLFHfep5WuwO+urtWuwlFL+8Ic/
+lDFjxpSGhoYybNiwcsQRR5S333674/O1vIeldH19/X0Pl/2amg/+WfZY0t7eXk4++eQydOjQ0tjY
+WHbZZZcPPf6MHj26nHrqqZ2OnX/++R2PPzvuuGP529/+1kcrqm2VUj7mV98DALBa8TOAAADJCEAA
+gGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAQBozZsyItdZaq9pjAFSdAARq3pIlS6o9
+AkBNEYBAzZk0aVIceeSRMXXq1Fh33XVjt912i4iIc889N8aOHRuDBg2KkSNHxg9+8INYuHBhRETc
+fffd8a1vfSv++9//RqVSiUqlEqeddlpERCxevDiOPvroWH/99WPQoEExYcKEuPvuuz9yhkqlEhdd
+dFHsscceMXDgwNhiiy1izpw58eyzz8akSZNi0KBBMXHixHjuuec6nXfjjTfG+PHjo6mpKcaMGROn
+n356LF26tMf/GwF8FAEI1KRLL700GhoaYvbs2XHhhRdGRERdXV38+te/jieeeCIuvfTSuPPOO+PY
+Y4+NiIiJEyfGL3/5y2hpaYnXXnstXnvttTj66KMjIuLII4+MOXPmxFVXXRWPPvpo7LPPPvHFL34x
+5s+f/5EznHHGGXHQQQfFI488Eptvvnl84xvfiMMOOyxOOOGEePDBB6OUEkceeWTH/f/617/GQQcd
+FFOmTIknn3wyLrroopgxY0aceeaZvfRfCWAFCkCN2Xnnncu4ceM+9n7XXHNNWWeddTpuT58+vQwZ
+MqTTfV588cVSX19fXnnllU7Hd9lll3LCCSes8GtHRDnppJM6bs+ZM6dERLn44os7jl155ZWlqamp
+09f86U9/2unrXHbZZWX48OEfuxaAnjSg2gEK0B3bb7/9h47dcccdMW3atPj73/8era2tsXTp0li0
+aFG88847MXDgwOV+ncceeyza2tpi00037XR88eLFsc4663zkDNtss03Hx0OHDo2IiLFjx3Y6tmjR
+omhtbY2WlpaYN29ezJ49u9Mrfm1tbR87I0BPE4BATRo0aFCn2//4xz9ijz32iMMPPzzOPPPMWHvt
+tePee++Nb3/727FkyZIVxtXChQujvr4+5s6dG/X19Z0+t+aaa37kDGussUbHx5VKZYXH2tvbO77X
+6aefHnvvvfeHvlZTU9NHfi+AniQAgdXC3Llzo729Pc4555yoq/vfjzdfffXVne7T0NAQbW1tnY6N
+Gzcu2tra4s0334zPfe5zvTrj+PHj4+mnn45NNtmkV78PwMcRgMBqYZNNNon33nsvzj///Nhzzz07
+/eWQZTbccMNYuHBhzJo1K7bddtsYOHBgbLrppnHAAQfEQQcdFOecc06MGzcu/vWvf8WsWbNim222
+id13373HZjzllFNijz32iFGjRsXXvva1qKuri3nz5sXjjz8eP/nJT3rs+wB8HH8LGFgtbLvttnHu
+uefGWWedFVtvvXVcccUVMW3atE73mThxYnz/+9+P/fbbLz7xiU/E2WefHRER06dPj4MOOih+/OMf
+x2abbRZf+cpX4oEHHohRo0b16Iy77bZb3HTTTXHbbbfFpz71qfj0pz8d5513XowePbpHvw/Ax6mU
+Ukq1hwAAoO94BRAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQ
+jAAEAEhGAAIAJPN/2azjiqsaPX4AAAAASUVORK5CYII=
+
+{'srcList': ['iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz\nAAAPYQAAD2EBqD+naQAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBo\ndHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAAGqdJREFUeJzt3XlwnWX5+OH7JCVLS1MGkC7QFgqy\nF2hBKlWHjuBgBUQZWRRZxAURxlZkHfZBrKCAyjCCDrQMIAjDpggUKIvSqSwFyiqURWRHRzDtQFua\nPN8//DU/Ai00aZKT0/u6ZjqT8+a8yf3w8J7zmXPStFJKKQEAQBp11R4AAIC+JQABAJIRgAAAyQhA\nAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCM\nAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAA\nyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEI\nAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIR\ngAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASGZAtQeoZe3t7fHqq6/G4MGDo1KpVHscAGAllFJi\nwYIFMWLEiKiry/lamABcBa+++mqMHDmy2mMAAN3w0ksvxQYbbFDtMapCAK6CwYMHR8T//gdqaWmp\n8jQAwMpobW2NkSNHdjyPZyQAV8Gyt31bWloEIADUmMw/vpXzjW8AgMQEIABAMgIQACAZAQgAkIwA\nBABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJ\nCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgA\nkIwABABIRgACACQjAAEAkhGAAADJDKj2ALC6KaXEokWLqj0Gq6CUEosXL46IiMbGxqhUKlWeiFXR\n1NRkD+EDBCD0sEWLFsXkyZOrPQbw/9xyyy3R3Nxc7TGgX/EWMABAMl4BhF60cLuvR6lzmdWctvdi\n8LyrIiJiwbb7R9SvUeWB6KpK+9JY85Erqz0G9FuemaAXlboB4qHW1a9hD2tQqfYA0M95CxgAIBkB\nCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS\nEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA\nIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA\nAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy\nAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIA\nJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJDOg2gPwYaWUWLRoUURENDU1\nRaVSqfJEANB3PA/2Pq8A9kOLFi2KyZMnx+TJkzsuAADIwvNg7xOAAADJCEAAgGQEIABAMgIQACAZ\nAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEA\nkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQ\nACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQj\nAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABA\nMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgAC\nACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhlQ7QH4sFJKx8eL\nFi2q4iR0R6c9e99eAn3I42hNe/+eFY+jvUIAdsHixYtj8eLFHbdbW1t77fss89WvfrVXvgd9pH1p\nRDRUewrIp31px4ceR2vb4sWLY+DAgdUeY7XjLeAumDZtWgwZMqTjz8iRI6s9EgBAl3kFsAtOOOGE\nOOqoozput7a29koENjY2dnx8/fXXR1NTU49/D3rPokWL/v8rDnUuMaiK9117Hkdrz/sfR9//nEjP\n8ezUBY2NjX3yP2KlUun4uKmpKZqbm3v9e9JL3reXQB/yOLraqHgc7RXeAgYASEYAAgAkIwABAJIR\ngAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAg\nGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwAB\nAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDIC\nEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAk\nIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAA\nQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJDMgGoPwIc1\nNTXFLbfc0vExAGTiebD3CcB+qFKpRHNzc7XHAICq8DzY+7wFDACQjAAEAEhGAAIAJCMAAQCSEYAA\nAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkB\nCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS\nEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA\nIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA\nAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy\nAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkMqPYAsDqrtC+NUu0h6Lq295b/MTWj0r602iNA\nvyYAoRet+ciV1R6BVTR43lXVHgGgx3kLGAAgGa8AQg9ramqKW265pdpjsApKKbF48eKIiGhsbIxK\npVLliVgVTU1N1R4B+h0BCD2sUqlEc3NztcdgFQ0cOLDaIwD0Gm8BAwAkIwABAJIRgAAAyQhAAIBk\nBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQA\nSEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhA\nAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkM6DaA9SyUkpERLS2tlZ5EgBgZS173l72PJ6RAFwF\nCxYsiIiIkSNHVnkSAKCrFixYEEOGDKn2GFVRKZnzdxW1t7fHq6++GoMHD45KpdKjX7u1tTVGjhwZ\nL730UrS0tPTo1+4PrK/2re5rtL7at7qv0fq6r5QSCxYsiBEjRkRdXc6fhvMK4Cqoq6uLDTbYoFe/\nR0tLy2p5YS9jfbVvdV+j9dW+1X2N1tc9WV/5WyZn9gIAJCYAAQCSqT/ttNNOq/YQLF99fX1MmjQp\nBgxYPd+pt77at7qv0fpq3+q+Ruuju/wlEACAZLwFDACQjAAEAEhGAAIAJCMAAQCSEYBV8sorr8Q3\nv/nNWGeddaK5uTnGjh0bDz744Eeec/fdd8f48eOjsbExNtlkk5gxY0bfDNsNXV3f3XffHZVK5UN/\nXn/99T6ceuVsuOGGy531iCOOWOE511xzTWy++ebR1NQUY8eOjZtvvrkPJ+66rq5xxowZH7pvU1NT\nH0+98tra2uLkk0+OjTbaKJqbm2PjjTeOM84442P/XdBauQa7s75augaXWbBgQUydOjVGjx4dzc3N\nMXHixHjggQc+8pxa2cOIrq+vv+/hX/7yl9hzzz1jxIgRUalU4oYbbuj0+VJKnHLKKTF8+PBobm6O\nXXfdNebPn/+xX/eCCy6IDTfcMJqammLChAlx//3399YSVi+FPvef//ynjB49uhxyyCHlvvvuK88/\n/3yZOXNmefbZZ1d4zvPPP18GDhxYjjrqqPLkk0+W888/v9TX15dbb721DydfOd1Z31133VUiojz9\n9NPltdde6/jT1tbWh5OvnDfffLPTjLfffnuJiHLXXXct9/6zZ88u9fX15eyzzy5PPvlkOemkk8oa\na6xRHnvssb4dvAu6usbp06eXlpaWTue8/vrrfTt0F5x55pllnXXWKTfddFN54YUXyjXXXFPWXHPN\n8qtf/WqF59TSNdid9dXSNbjMvvvuW7bccstyzz33lPnz55dTTz21tLS0lJdffnm596+lPSyl6+vr\n73t48803lxNPPLFcd911JSLK9ddf3+nzP/vZz8qQIUPKDTfcUObNm1e+/OUvl4022qi8++67K/ya\nV111VWloaCiXXHJJeeKJJ8p3v/vdstZaa5U33nijt5dT8wRgFRx33HHls5/9bJfOOfbYY8tWW23V\n6dh+++1Xdtttt54crUd0Z33LHrjeeuutXpqq90yZMqVsvPHGpb29fbmf33fffcvuu+/e6diECRPK\nYYcd1hfj9YiPW+P06dPLkCFD+niq7tt9993LoYce2unY3nvvXQ444IAVnlNL12B31ldr1+A777xT\n6uvry0033dTp+Pjx48uJJ5643HNqaQ+7s75a2sMPBmB7e3sZNmxY+fnPf95x7O233y6NjY3lyiuv\nXOHX2XHHHcsRRxzRcbutra2MGDGiTJs2rXcGX414C7gK/vjHP8YOO+wQ++yzT6y33noxbty4+N3v\nfveR58yZMyd23XXXTsd22223mDNnTm+O2i3dWd8y2223XQwfPjy+8IUvxOzZs3t50lW3ZMmSuPzy\ny+PQQw+NSqWy3PvU0t4tz8qsMSJi4cKFMXr06Bg5cmTstdde8cQTT/ThlF0zceLEmDVrVjzzzDMR\nETFv3ry49957Y/LkySs8p5b2sTvrW6ZWrsGlS5dGW1vbh37UoLm5Oe69997lnlNLe9id9S1TK3v4\nfi+88EK8/vrrnfZnyJAhMWHChBXuz5IlS2Lu3Lmdzqmrq4tdd921X+5pfyMAq+D555+P3/zmN/HJ\nT34yZs6cGYcffnj88Ic/jEsvvXSF57z++usxdOjQTseGDh0ara2t8e677/b2yF3SnfUNHz48Lrzw\nwrj22mvj2muvjZEjR8akSZPioYce6sPJu+6GG26It99+Ow455JAV3mdFe9dffi7n46zMGjfbbLO4\n5JJL4sYbb4zLL7882tvbY+LEifHyyy/33aBdcPzxx8f+++8fm2++eayxxhoxbty4mDp1ahxwwAEr\nPKeWrsHurK/WrsHBgwfHTjvtFGeccUa8+uqr0dbWFpdffnnMmTMnXnvtteWeU0t72J311doevt+y\nx8OuPFb++9//jra2tpp+fK0m/7ZKFbS3t8cOO+wQP/3pTyMiYty4cfH444/HhRdeGAcffHCVp1t1\n3VnfZpttFptttlnH7YkTJ8Zzzz0X5513Xlx22WV9Mnd3XHzxxTF58uQYMWJEtUfpNSuzxp122il2\n2mmnjtsTJ06MLbbYIi666KI444wz+mLMLrn66qvjiiuuiN///vex1VZbxSOPPBJTp06NESNGrBbX\nYHfWV4vX4GWXXRaHHnporL/++lFfXx/jx4+Pr3/96zF37txqj9Yjurq+WtxDqscrgFUwfPjw2HLL\nLTsd22KLLeKf//znCs8ZNmxYvPHGG52OvfHGG9HS0hLNzc29Mmd3dWd9y7PjjjvGs88+25Oj9agX\nX3wx7rjjjvjOd77zkfdb0d4NGzasN8frESu7xg9a9qpTf92/Y445puNVsrFjx8aBBx4YP/rRj2La\ntGkrPKeWrsHurG95+vs1uPHGG8c999wTCxcujJdeeinuv//+eO+992LMmDHLvX8t7WFE19e3PP19\nD5dZ9njYlcfKddddN+rr62v28bXaBGAVfOYzn4mnn36607FnnnkmRo8evcJzdtppp5g1a1anY7ff\nfnunV136i+6sb3keeeSRGD58eE+O1qOmT58e6623Xuy+++4feb9a2rsPWtk1flBbW1s89thj/Xb/\n3nnnnair6/zwV19fH+3t7Ss8p5b2sTvrW57+fg0uM2jQoBg+fHi89dZbMXPmzNhrr72We79a2sP3\nW9n1LU+t7OFGG20Uw4YN67Q/ra2tcd99961wfxoaGmL77bfvdE57e3vMmjWr3+9pv1Dtv4WS0f33\n318GDBhQzjzzzDJ//vxyxRVXlIEDB5bLL7+84z7HH398OfDAAztuL/v1Bcccc0x56qmnygUXXNBv\nf31Bd9Z33nnnlRtuuKHMnz+/PPbYY2XKlCmlrq6u3HHHHdVYwsdqa2sro0aNKscdd9yHPnfggQeW\n448/vuP27Nmzy4ABA8ovfvGL8tRTT5VTTz213/8amFK6tsbTTz+9zJw5szz33HNl7ty5Zf/99y9N\nTU3liSee6MuRV9rBBx9c1l9//Y5fk3LdddeVddddtxx77LEd96nla7A766u1a7CUUm699dZyyy23\nlOeff77cdtttZdttty0TJkwoS5YsKaXU9h6W0vX19fc9XLBgQXn44YfLww8/XCKinHvuueXhhx8u\nL774Yinlf78GZq211io33nhjefTRR8tee+31oV8D8/nPf76cf/75Hbevuuqq0tjYWGbMmFGefPLJ\n8r3vfa+stdZa/frXUPUXArBK/vSnP5Wtt966NDY2ls0337z89re/7fT5gw8+uOy8886djt11111l\nu+22Kw0NDWXMmDFl+vTpfTdwF3V1fWeddVbZeOONS1NTU1l77bXLpEmTyp133tnHU6+8mTNndvy+\nrQ/aeeedy8EHH9zp2NVXX1023XTT0tDQULbaaqvy5z//uY8m7b6urHHq1Kll1KhRpaGhoQwdOrR8\n6UtfKg899FAfTts1ra2tZcqUKWXUqFGlqampjBkzppx44oll8eLFHfep5WuwO+urtWuwlFL+8Ic/\nlDFjxpSGhoYybNiwcsQRR5S333674/O1vIeldH19/X0Pl/2amg/+WfZY0t7eXk4++eQydOjQ0tjY\nWHbZZZcPPf6MHj26nHrqqZ2OnX/++R2PPzvuuGP529/+1kcrqm2VUj7mV98DALBa8TOAAADJCEAA\ngGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAQBozZsyItdZaq9pjAFSdAARq3pIlS6o9\nAkBNEYBAzZk0aVIceeSRMXXq1Fh33XVjt912i4iIc889N8aOHRuDBg2KkSNHxg9+8INYuHBhRETc\nfffd8a1vfSv++9//RqVSiUqlEqeddlpERCxevDiOPvroWH/99WPQoEExYcKEuPvuuz9yhkqlEhdd\ndFHsscceMXDgwNhiiy1izpw58eyzz8akSZNi0KBBMXHixHjuuec6nXfjjTfG+PHjo6mpKcaMGROn\nn356LF26tMf/GwF8FAEI1KRLL700GhoaYvbs2XHhhRdGRERdXV38+te/jieeeCIuvfTSuPPOO+PY\nY4+NiIiJEyfGL3/5y2hpaYnXXnstXnvttTj66KMjIuLII4+MOXPmxFVXXRWPPvpo7LPPPvHFL34x\n5s+f/5EznHHGGXHQQQfFI488Eptvvnl84xvfiMMOOyxOOOGEePDBB6OUEkceeWTH/f/617/GQQcd\nFFOmTIknn3wyLrroopgxY0aceeaZvfRfCWAFCkCN2Xnnncu4ceM+9n7XXHNNWWeddTpuT58+vQwZ\nMqTTfV588cVSX19fXnnllU7Hd9lll3LCCSes8GtHRDnppJM6bs+ZM6dERLn44os7jl155ZWlqamp\n09f86U9/2unrXHbZZWX48OEfuxaAnjSg2gEK0B3bb7/9h47dcccdMW3atPj73/8era2tsXTp0li0\naFG88847MXDgwOV+ncceeyza2tpi00037XR88eLFsc4663zkDNtss03Hx0OHDo2IiLFjx3Y6tmjR\nomhtbY2WlpaYN29ezJ49u9Mrfm1tbR87I0BPE4BATRo0aFCn2//4xz9ijz32iMMPPzzOPPPMWHvt\ntePee++Nb3/727FkyZIVxtXChQujvr4+5s6dG/X19Z0+t+aaa37kDGussUbHx5VKZYXH2tvbO77X\n6aefHnvvvfeHvlZTU9NHfi+AniQAgdXC3Llzo729Pc4555yoq/vfjzdfffXVne7T0NAQbW1tnY6N\nGzcu2tra4s0334zPfe5zvTrj+PHj4+mnn45NNtmkV78PwMcRgMBqYZNNNon33nsvzj///Nhzzz07\n/eWQZTbccMNYuHBhzJo1K7bddtsYOHBgbLrppnHAAQfEQQcdFOecc06MGzcu/vWvf8WsWbNim222\nid13373HZjzllFNijz32iFGjRsXXvva1qKuri3nz5sXjjz8eP/nJT3rs+wB8HH8LGFgtbLvttnHu\nuefGWWedFVtvvXVcccUVMW3atE73mThxYnz/+9+P/fbbLz7xiU/E2WefHRER06dPj4MOOih+/OMf\nx2abbRZf+cpX4oEHHohRo0b16Iy77bZb3HTTTXHbbbfFpz71qfj0pz8d5513XowePbpHvw/Ax6mU\nUkq1hwAAoO94BRAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQ\njAAEAEhGAAIAJPN/2azjiqsaPX4AAAAASUVORK5CYII=\n']}127.0.0.1 - - [19/Jun/2018 23:46:17] "POST /oneVarNum HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2018 23:46:20] "POST /csv HTTP/1.1" 200 -
+
+<class 'dict'>
+{'first': ['10', '6'], 'firstQuestionField': 'rate me'}
+iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAPYQAAD2EBqD+naQAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBo
+dHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAAGqdJREFUeJzt3XlwnWX5+OH7JCVLS1MGkC7QFgqy
+F2hBKlWHjuBgBUQZWRRZxAURxlZkHfZBrKCAyjCCDrQMIAjDpggUKIvSqSwFyiqURWRHRzDtQFua
+PN8//DU/Ai00aZKT0/u6ZjqT8+a8yf3w8J7zmXPStFJKKQEAQBp11R4AAIC+JQABAJIRgAAAyQhA
+AIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCM
+AAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAA
+yQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEI
+AJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIR
+gAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASGZAtQeoZe3t7fHqq6/G4MGDo1KpVHscAGAllFJi
+wYIFMWLEiKiry/lamABcBa+++mqMHDmy2mMAAN3w0ksvxQYbbFDtMapCAK6CwYMHR8T//gdqaWmp
+8jQAwMpobW2NkSNHdjyPZyQAV8Gyt31bWloEIADUmMw/vpXzjW8AgMQEIABAMgIQACAZAQgAkIwA
+BABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJ
+CEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgA
+kIwABABIRgACACQjAAEAkhGAAADJDKj2ALC6KaXEokWLqj0Gq6CUEosXL46IiMbGxqhUKlWeiFXR
+1NRkD+EDBCD0sEWLFsXkyZOrPQbw/9xyyy3R3Nxc7TGgX/EWMABAMl4BhF60cLuvR6lzmdWctvdi
+8LyrIiJiwbb7R9SvUeWB6KpK+9JY85Erqz0G9FuemaAXlboB4qHW1a9hD2tQqfYA0M95CxgAIBkB
+CACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS
+EYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA
+IBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA
+AQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy
+AhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIA
+JCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJDOg2gPwYaWUWLRoUURENDU1
+RaVSqfJEANB3PA/2Pq8A9kOLFi2KyZMnx+TJkzsuAADIwvNg7xOAAADJCEAAgGQEIABAMgIQACAZ
+AQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEA
+khGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQ
+ACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQj
+AAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABA
+MgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgAC
+ACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhlQ7QH4sFJKx8eL
+Fi2q4iR0R6c9e99eAn3I42hNe/+eFY+jvUIAdsHixYtj8eLFHbdbW1t77fss89WvfrVXvgd9pH1p
+RDRUewrIp31px4ceR2vb4sWLY+DAgdUeY7XjLeAumDZtWgwZMqTjz8iRI6s9EgBAl3kFsAtOOOGE
+OOqoozput7a29koENjY2dnx8/fXXR1NTU49/D3rPokWL/v8rDnUuMaiK9117Hkdrz/sfR9//nEjP
+8ezUBY2NjX3yP2KlUun4uKmpKZqbm3v9e9JL3reXQB/yOLraqHgc7RXeAgYASEYAAgAkIwABAJIR
+gAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAg
+GQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwAB
+AJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDIC
+EAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAk
+IwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAA
+QDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJDMgGoPwIc1
+NTXFLbfc0vExAGTiebD3CcB+qFKpRHNzc7XHAICq8DzY+7wFDACQjAAEAEhGAAIAJCMAAQCSEYAA
+AMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkB
+CACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS
+EYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA
+IBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA
+AQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy
+AhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkMqPYAsDqrtC+NUu0h6Lq295b/MTWj0r602iNA
+vyYAoRet+ciV1R6BVTR43lXVHgGgx3kLGAAgGa8AQg9ramqKW265pdpjsApKKbF48eKIiGhsbIxK
+pVLliVgVTU1N1R4B+h0BCD2sUqlEc3NztcdgFQ0cOLDaIwD0Gm8BAwAkIwABAJIRgAAAyQhAAIBk
+BCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQA
+SEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhA
+AIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkM6DaA9SyUkpERLS2tlZ5EgBgZS173l72PJ6RAFwF
+CxYsiIiIkSNHVnkSAKCrFixYEEOGDKn2GFVRKZnzdxW1t7fHq6++GoMHD45KpdKjX7u1tTVGjhwZ
+L730UrS0tPTo1+4PrK/2re5rtL7at7qv0fq6r5QSCxYsiBEjRkRdXc6fhvMK4Cqoq6uLDTbYoFe/
+R0tLy2p5YS9jfbVvdV+j9dW+1X2N1tc9WV/5WyZn9gIAJCYAAQCSqT/ttNNOq/YQLF99fX1MmjQp
+BgxYPd+pt77at7qv0fpq3+q+Ruuju/wlEACAZLwFDACQjAAEAEhGAAIAJCMAAQCSEYBV8sorr8Q3
+v/nNWGeddaK5uTnGjh0bDz744Eeec/fdd8f48eOjsbExNtlkk5gxY0bfDNsNXV3f3XffHZVK5UN/
+Xn/99T6ceuVsuOGGy531iCOOWOE511xzTWy++ebR1NQUY8eOjZtvvrkPJ+66rq5xxowZH7pvU1NT
+H0+98tra2uLkk0+OjTbaKJqbm2PjjTeOM84442P/XdBauQa7s75augaXWbBgQUydOjVGjx4dzc3N
+MXHixHjggQc+8pxa2cOIrq+vv+/hX/7yl9hzzz1jxIgRUalU4oYbbuj0+VJKnHLKKTF8+PBobm6O
+XXfdNebPn/+xX/eCCy6IDTfcMJqammLChAlx//3399YSVi+FPvef//ynjB49uhxyyCHlvvvuK88/
+/3yZOXNmefbZZ1d4zvPPP18GDhxYjjrqqPLkk0+W888/v9TX15dbb721DydfOd1Z31133VUiojz9
+9NPltdde6/jT1tbWh5OvnDfffLPTjLfffnuJiHLXXXct9/6zZ88u9fX15eyzzy5PPvlkOemkk8oa
+a6xRHnvssb4dvAu6usbp06eXlpaWTue8/vrrfTt0F5x55pllnXXWKTfddFN54YUXyjXXXFPWXHPN
+8qtf/WqF59TSNdid9dXSNbjMvvvuW7bccstyzz33lPnz55dTTz21tLS0lJdffnm596+lPSyl6+vr
+73t48803lxNPPLFcd911JSLK9ddf3+nzP/vZz8qQIUPKDTfcUObNm1e+/OUvl4022qi8++67K/ya
+V111VWloaCiXXHJJeeKJJ8p3v/vdstZaa5U33nijt5dT8wRgFRx33HHls5/9bJfOOfbYY8tWW23V
+6dh+++1Xdtttt54crUd0Z33LHrjeeuutXpqq90yZMqVsvPHGpb29fbmf33fffcvuu+/e6diECRPK
+YYcd1hfj9YiPW+P06dPLkCFD+niq7tt9993LoYce2unY3nvvXQ444IAVnlNL12B31ldr1+A777xT
+6uvry0033dTp+Pjx48uJJ5643HNqaQ+7s75a2sMPBmB7e3sZNmxY+fnPf95x7O233y6NjY3lyiuv
+XOHX2XHHHcsRRxzRcbutra2MGDGiTJs2rXcGX414C7gK/vjHP8YOO+wQ++yzT6y33noxbty4+N3v
+fveR58yZMyd23XXXTsd22223mDNnTm+O2i3dWd8y2223XQwfPjy+8IUvxOzZs3t50lW3ZMmSuPzy
+y+PQQw+NSqWy3PvU0t4tz8qsMSJi4cKFMXr06Bg5cmTstdde8cQTT/ThlF0zceLEmDVrVjzzzDMR
+ETFv3ry49957Y/LkySs8p5b2sTvrW6ZWrsGlS5dGW1vbh37UoLm5Oe69997lnlNLe9id9S1TK3v4
+fi+88EK8/vrrnfZnyJAhMWHChBXuz5IlS2Lu3Lmdzqmrq4tdd921X+5pfyMAq+D555+P3/zmN/HJ
+T34yZs6cGYcffnj88Ic/jEsvvXSF57z++usxdOjQTseGDh0ara2t8e677/b2yF3SnfUNHz48Lrzw
+wrj22mvj2muvjZEjR8akSZPioYce6sPJu+6GG26It99+Ow455JAV3mdFe9dffi7n46zMGjfbbLO4
+5JJL4sYbb4zLL7882tvbY+LEifHyyy/33aBdcPzxx8f+++8fm2++eayxxhoxbty4mDp1ahxwwAEr
+PKeWrsHurK/WrsHBgwfHTjvtFGeccUa8+uqr0dbWFpdffnnMmTMnXnvtteWeU0t72J311doevt+y
+x8OuPFb++9//jra2tpp+fK0m/7ZKFbS3t8cOO+wQP/3pTyMiYty4cfH444/HhRdeGAcffHCVp1t1
+3VnfZpttFptttlnH7YkTJ8Zzzz0X5513Xlx22WV9Mnd3XHzxxTF58uQYMWJEtUfpNSuzxp122il2
+2mmnjtsTJ06MLbbYIi666KI444wz+mLMLrn66qvjiiuuiN///vex1VZbxSOPPBJTp06NESNGrBbX
+YHfWV4vX4GWXXRaHHnporL/++lFfXx/jx4+Pr3/96zF37txqj9Yjurq+WtxDqscrgFUwfPjw2HLL
+LTsd22KLLeKf//znCs8ZNmxYvPHGG52OvfHGG9HS0hLNzc29Mmd3dWd9y7PjjjvGs88+25Oj9agX
+X3wx7rjjjvjOd77zkfdb0d4NGzasN8frESu7xg9a9qpTf92/Y445puNVsrFjx8aBBx4YP/rRj2La
+tGkrPKeWrsHurG95+vs1uPHGG8c999wTCxcujJdeeinuv//+eO+992LMmDHLvX8t7WFE19e3PP19
+D5dZ9njYlcfKddddN+rr62v28bXaBGAVfOYzn4mnn36607FnnnkmRo8evcJzdtppp5g1a1anY7ff
+fnunV136i+6sb3keeeSRGD58eE+O1qOmT58e6623Xuy+++4feb9a2rsPWtk1flBbW1s89thj/Xb/
+3nnnnair6/zwV19fH+3t7Ss8p5b2sTvrW57+fg0uM2jQoBg+fHi89dZbMXPmzNhrr72We79a2sP3
+W9n1LU+t7OFGG20Uw4YN67Q/ra2tcd99961wfxoaGmL77bfvdE57e3vMmjWr3+9pv1Dtv4WS0f33
+318GDBhQzjzzzDJ//vxyxRVXlIEDB5bLL7+84z7HH398OfDAAztuL/v1Bcccc0x56qmnygUXXNBv
+f31Bd9Z33nnnlRtuuKHMnz+/PPbYY2XKlCmlrq6u3HHHHdVYwsdqa2sro0aNKscdd9yHPnfggQeW
+448/vuP27Nmzy4ABA8ovfvGL8tRTT5VTTz213/8amFK6tsbTTz+9zJw5szz33HNl7ty5Zf/99y9N
+TU3liSee6MuRV9rBBx9c1l9//Y5fk3LdddeVddddtxx77LEd96nla7A766u1a7CUUm699dZyyy23
+lOeff77cdtttZdttty0TJkwoS5YsKaXU9h6W0vX19fc9XLBgQXn44YfLww8/XCKinHvuueXhhx8u
+L774Yinlf78GZq211io33nhjefTRR8tee+31oV8D8/nPf76cf/75Hbevuuqq0tjYWGbMmFGefPLJ
+8r3vfa+stdZa/frXUPUXArBK/vSnP5Wtt966NDY2ls0337z89re/7fT5gw8+uOy8886djt11111l
+u+22Kw0NDWXMmDFl+vTpfTdwF3V1fWeddVbZeOONS1NTU1l77bXLpEmTyp133tnHU6+8mTNndvy+
+rQ/aeeedy8EHH9zp2NVXX1023XTT0tDQULbaaqvy5z//uY8m7b6urHHq1Kll1KhRpaGhoQwdOrR8
+6UtfKg899FAfTts1ra2tZcqUKWXUqFGlqampjBkzppx44oll8eLFHfep5WuwO+urtWuwlFL+8Ic/
+lDFjxpSGhoYybNiwcsQRR5S333674/O1vIeldH19/X0Pl/2amg/+WfZY0t7eXk4++eQydOjQ0tjY
+WHbZZZcPPf6MHj26nHrqqZ2OnX/++R2PPzvuuGP529/+1kcrqm2VUj7mV98DALBa8TOAAADJCEAA
+gGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAQBozZsyItdZaq9pjAFSdAARq3pIlS6o9
+AkBNEYBAzZk0aVIceeSRMXXq1Fh33XVjt912i4iIc889N8aOHRuDBg2KkSNHxg9+8INYuHBhRETc
+fffd8a1vfSv++9//RqVSiUqlEqeddlpERCxevDiOPvroWH/99WPQoEExYcKEuPvuuz9yhkqlEhdd
+dFHsscceMXDgwNhiiy1izpw58eyzz8akSZNi0KBBMXHixHjuuec6nXfjjTfG+PHjo6mpKcaMGROn
+n356LF26tMf/GwF8FAEI1KRLL700GhoaYvbs2XHhhRdGRERdXV38+te/jieeeCIuvfTSuPPOO+PY
+Y4+NiIiJEyfGL3/5y2hpaYnXXnstXnvttTj66KMjIuLII4+MOXPmxFVXXRWPPvpo7LPPPvHFL34x
+5s+f/5EznHHGGXHQQQfFI488Eptvvnl84xvfiMMOOyxOOOGEePDBB6OUEkceeWTH/f/617/GQQcd
+FFOmTIknn3wyLrroopgxY0aceeaZvfRfCWAFCkCN2Xnnncu4ceM+9n7XXHNNWWeddTpuT58+vQwZ
+MqTTfV588cVSX19fXnnllU7Hd9lll3LCCSes8GtHRDnppJM6bs+ZM6dERLn44os7jl155ZWlqamp
+09f86U9/2unrXHbZZWX48OEfuxaAnjSg2gEK0B3bb7/9h47dcccdMW3atPj73/8era2tsXTp0li0
+aFG88847MXDgwOV+ncceeyza2tpi00037XR88eLFsc4663zkDNtss03Hx0OHDo2IiLFjx3Y6tmjR
+omhtbY2WlpaYN29ezJ49u9Mrfm1tbR87I0BPE4BATRo0aFCn2//4xz9ijz32iMMPPzzOPPPMWHvt
+tePee++Nb3/727FkyZIVxtXChQujvr4+5s6dG/X19Z0+t+aaa37kDGussUbHx5VKZYXH2tvbO77X
+6aefHnvvvfeHvlZTU9NHfi+AniQAgdXC3Llzo729Pc4555yoq/vfjzdfffXVne7T0NAQbW1tnY6N
+Gzcu2tra4s0334zPfe5zvTrj+PHj4+mnn45NNtmkV78PwMcRgMBqYZNNNon33nsvzj///Nhzzz07
+/eWQZTbccMNYuHBhzJo1K7bddtsYOHBgbLrppnHAAQfEQQcdFOecc06MGzcu/vWvf8WsWbNim222
+id13373HZjzllFNijz32iFGjRsXXvva1qKuri3nz5sXjjz8eP/nJT3rs+wB8HH8LGFgtbLvttnHu
+uefGWWedFVtvvXVcccUVMW3atE73mThxYnz/+9+P/fbbLz7xiU/E2WefHRER06dPj4MOOih+/OMf
+x2abbRZf+cpX4oEHHohRo0b16Iy77bZb3HTTTXHbbbfFpz71qfj0pz8d5513XowePbpHvw/Ax6mU
+Ukq1hwAAoO94BRAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQ
+jAAEAEhGAAIAJPN/2azjiqsaPX4AAAAASUVORK5CYII=
+
+{'srcList': ['iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz\nAAAPYQAAD2EBqD+naQAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4yLCBo\ndHRwOi8vbWF0cGxvdGxpYi5vcmcvhp/UCwAAGqdJREFUeJzt3XlwnWX5+OH7JCVLS1MGkC7QFgqy\nF2hBKlWHjuBgBUQZWRRZxAURxlZkHfZBrKCAyjCCDrQMIAjDpggUKIvSqSwFyiqURWRHRzDtQFua\nPN8//DU/Ai00aZKT0/u6ZjqT8+a8yf3w8J7zmXPStFJKKQEAQBp11R4AAIC+JQABAJIRgAAAyQhA\nAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCM\nAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAA\nyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEI\nAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIR\ngAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASGZAtQeoZe3t7fHqq6/G4MGDo1KpVHscAGAllFJi\nwYIFMWLEiKiry/lamABcBa+++mqMHDmy2mMAAN3w0ksvxQYbbFDtMapCAK6CwYMHR8T//gdqaWmp\n8jQAwMpobW2NkSNHdjyPZyQAV8Gyt31bWloEIADUmMw/vpXzjW8AgMQEIABAMgIQACAZAQgAkIwA\nBABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJ\nCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgA\nkIwABABIRgACACQjAAEAkhGAAADJDKj2ALC6KaXEokWLqj0Gq6CUEosXL46IiMbGxqhUKlWeiFXR\n1NRkD+EDBCD0sEWLFsXkyZOrPQbw/9xyyy3R3Nxc7TGgX/EWMABAMl4BhF60cLuvR6lzmdWctvdi\n8LyrIiJiwbb7R9SvUeWB6KpK+9JY85Erqz0G9FuemaAXlboB4qHW1a9hD2tQqfYA0M95CxgAIBkB\nCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS\nEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA\nIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA\nAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy\nAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIA\nJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJDOg2gPwYaWUWLRoUURENDU1\nRaVSqfJEANB3PA/2Pq8A9kOLFi2KyZMnx+TJkzsuAADIwvNg7xOAAADJCEAAgGQEIABAMgIQACAZ\nAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEA\nkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQ\nACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQj\nAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABA\nMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgAC\nACQjAAEAkhGAAADJCEAAgGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhlQ7QH4sFJKx8eL\nFi2q4iR0R6c9e99eAn3I42hNe/+eFY+jvUIAdsHixYtj8eLFHbdbW1t77fss89WvfrVXvgd9pH1p\nRDRUewrIp31px4ceR2vb4sWLY+DAgdUeY7XjLeAumDZtWgwZMqTjz8iRI6s9EgBAl3kFsAtOOOGE\nOOqoozput7a29koENjY2dnx8/fXXR1NTU49/D3rPokWL/v8rDnUuMaiK9117Hkdrz/sfR9//nEjP\n8ezUBY2NjX3yP2KlUun4uKmpKZqbm3v9e9JL3reXQB/yOLraqHgc7RXeAgYASEYAAgAkIwABAJIR\ngAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAg\nGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwAB\nAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDIC\nEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAk\nIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAA\nQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJDMgGoPwIc1\nNTXFLbfc0vExAGTiebD3CcB+qFKpRHNzc7XHAICq8DzY+7wFDACQjAAEAEhGAAIAJCMAAQCSEYAA\nAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkB\nCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCS\nEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAA\nIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMA\nAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAy\nAhAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkMqPYAsDqrtC+NUu0h6Lq295b/MTWj0r602iNA\nvyYAoRet+ciV1R6BVTR43lXVHgGgx3kLGAAgGa8AQg9ramqKW265pdpjsApKKbF48eKIiGhsbIxK\npVLliVgVTU1N1R4B+h0BCD2sUqlEc3NztcdgFQ0cOLDaIwD0Gm8BAwAkIwABAJIRgAAAyQhAAIBk\nBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQA\nSEYAAgAkIwABAJIRgAAAyQhAAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkIwABAJIRgAAAyQhA\nAIBkBCAAQDICEAAgGQEIAJCMAAQASEYAAgAkM6DaA9SyUkpERLS2tlZ5EgBgZS173l72PJ6RAFwF\nCxYsiIiIkSNHVnkSAKCrFixYEEOGDKn2GFVRKZnzdxW1t7fHq6++GoMHD45KpdKjX7u1tTVGjhwZ\nL730UrS0tPTo1+4PrK/2re5rtL7at7qv0fq6r5QSCxYsiBEjRkRdXc6fhvMK4Cqoq6uLDTbYoFe/\nR0tLy2p5YS9jfbVvdV+j9dW+1X2N1tc9WV/5WyZn9gIAJCYAAQCSqT/ttNNOq/YQLF99fX1MmjQp\nBgxYPd+pt77at7qv0fpq3+q+Ruuju/wlEACAZLwFDACQjAAEAEhGAAIAJCMAAQCSEYBV8sorr8Q3\nv/nNWGeddaK5uTnGjh0bDz744Eeec/fdd8f48eOjsbExNtlkk5gxY0bfDNsNXV3f3XffHZVK5UN/\nXn/99T6ceuVsuOGGy531iCOOWOE511xzTWy++ebR1NQUY8eOjZtvvrkPJ+66rq5xxowZH7pvU1NT\nH0+98tra2uLkk0+OjTbaKJqbm2PjjTeOM84442P/XdBauQa7s75augaXWbBgQUydOjVGjx4dzc3N\nMXHixHjggQc+8pxa2cOIrq+vv+/hX/7yl9hzzz1jxIgRUalU4oYbbuj0+VJKnHLKKTF8+PBobm6O\nXXfdNebPn/+xX/eCCy6IDTfcMJqammLChAlx//3399YSVi+FPvef//ynjB49uhxyyCHlvvvuK88/\n/3yZOXNmefbZZ1d4zvPPP18GDhxYjjrqqPLkk0+W888/v9TX15dbb721DydfOd1Z31133VUiojz9\n9NPltdde6/jT1tbWh5OvnDfffLPTjLfffnuJiHLXXXct9/6zZ88u9fX15eyzzy5PPvlkOemkk8oa\na6xRHnvssb4dvAu6usbp06eXlpaWTue8/vrrfTt0F5x55pllnXXWKTfddFN54YUXyjXXXFPWXHPN\n8qtf/WqF59TSNdid9dXSNbjMvvvuW7bccstyzz33lPnz55dTTz21tLS0lJdffnm596+lPSyl6+vr\n73t48803lxNPPLFcd911JSLK9ddf3+nzP/vZz8qQIUPKDTfcUObNm1e+/OUvl4022qi8++67K/ya\nV111VWloaCiXXHJJeeKJJ8p3v/vdstZaa5U33nijt5dT8wRgFRx33HHls5/9bJfOOfbYY8tWW23V\n6dh+++1Xdtttt54crUd0Z33LHrjeeuutXpqq90yZMqVsvPHGpb29fbmf33fffcvuu+/e6diECRPK\nYYcd1hfj9YiPW+P06dPLkCFD+niq7tt9993LoYce2unY3nvvXQ444IAVnlNL12B31ldr1+A777xT\n6uvry0033dTp+Pjx48uJJ5643HNqaQ+7s75a2sMPBmB7e3sZNmxY+fnPf95x7O233y6NjY3lyiuv\nXOHX2XHHHcsRRxzRcbutra2MGDGiTJs2rXcGX414C7gK/vjHP8YOO+wQ++yzT6y33noxbty4+N3v\nfveR58yZMyd23XXXTsd22223mDNnTm+O2i3dWd8y2223XQwfPjy+8IUvxOzZs3t50lW3ZMmSuPzy\ny+PQQw+NSqWy3PvU0t4tz8qsMSJi4cKFMXr06Bg5cmTstdde8cQTT/ThlF0zceLEmDVrVjzzzDMR\nETFv3ry49957Y/LkySs8p5b2sTvrW6ZWrsGlS5dGW1vbh37UoLm5Oe69997lnlNLe9id9S1TK3v4\nfi+88EK8/vrrnfZnyJAhMWHChBXuz5IlS2Lu3Lmdzqmrq4tdd921X+5pfyMAq+D555+P3/zmN/HJ\nT34yZs6cGYcffnj88Ic/jEsvvXSF57z++usxdOjQTseGDh0ara2t8e677/b2yF3SnfUNHz48Lrzw\nwrj22mvj2muvjZEjR8akSZPioYce6sPJu+6GG26It99+Ow455JAV3mdFe9dffi7n46zMGjfbbLO4\n5JJL4sYbb4zLL7882tvbY+LEifHyyy/33aBdcPzxx8f+++8fm2++eayxxhoxbty4mDp1ahxwwAEr\nPKeWrsHurK/WrsHBgwfHTjvtFGeccUa8+uqr0dbWFpdffnnMmTMnXnvtteWeU0t72J311doevt+y\nx8OuPFb++9//jra2tpp+fK0m/7ZKFbS3t8cOO+wQP/3pTyMiYty4cfH444/HhRdeGAcffHCVp1t1\n3VnfZpttFptttlnH7YkTJ8Zzzz0X5513Xlx22WV9Mnd3XHzxxTF58uQYMWJEtUfpNSuzxp122il2\n2mmnjtsTJ06MLbbYIi666KI444wz+mLMLrn66qvjiiuuiN///vex1VZbxSOPPBJTp06NESNGrBbX\nYHfWV4vX4GWXXRaHHnporL/++lFfXx/jx4+Pr3/96zF37txqj9Yjurq+WtxDqscrgFUwfPjw2HLL\nLTsd22KLLeKf//znCs8ZNmxYvPHGG52OvfHGG9HS0hLNzc29Mmd3dWd9y7PjjjvGs88+25Oj9agX\nX3wx7rjjjvjOd77zkfdb0d4NGzasN8frESu7xg9a9qpTf92/Y445puNVsrFjx8aBBx4YP/rRj2La\ntGkrPKeWrsHurG95+vs1uPHGG8c999wTCxcujJdeeinuv//+eO+992LMmDHLvX8t7WFE19e3PP19\nD5dZ9njYlcfKddddN+rr62v28bXaBGAVfOYzn4mnn36607FnnnkmRo8evcJzdtppp5g1a1anY7ff\nfnunV136i+6sb3keeeSRGD58eE+O1qOmT58e6623Xuy+++4feb9a2rsPWtk1flBbW1s89thj/Xb/\n3nnnnair6/zwV19fH+3t7Ss8p5b2sTvrW57+fg0uM2jQoBg+fHi89dZbMXPmzNhrr72We79a2sP3\nW9n1LU+t7OFGG20Uw4YN67Q/ra2tcd99961wfxoaGmL77bfvdE57e3vMmjWr3+9pv1Dtv4WS0f33\n318GDBhQzjzzzDJ//vxyxRVXlIEDB5bLL7+84z7HH398OfDAAztuL/v1Bcccc0x56qmnygUXXNBv\nf31Bd9Z33nnnlRtuuKHMnz+/PPbYY2XKlCmlrq6u3HHHHdVYwsdqa2sro0aNKscdd9yHPnfggQeW\n448/vuP27Nmzy4ABA8ovfvGL8tRTT5VTTz213/8amFK6tsbTTz+9zJw5szz33HNl7ty5Zf/99y9N\nTU3liSee6MuRV9rBBx9c1l9//Y5fk3LdddeVddddtxx77LEd96nla7A766u1a7CUUm699dZyyy23\nlOeff77cdtttZdttty0TJkwoS5YsKaXU9h6W0vX19fc9XLBgQXn44YfLww8/XCKinHvuueXhhx8u\nL774Yinlf78GZq211io33nhjefTRR8tee+31oV8D8/nPf76cf/75Hbevuuqq0tjYWGbMmFGefPLJ\n8r3vfa+stdZa/frXUPUXArBK/vSnP5Wtt966NDY2ls0337z89re/7fT5gw8+uOy8886djt11111l\nu+22Kw0NDWXMmDFl+vTpfTdwF3V1fWeddVbZeOONS1NTU1l77bXLpEmTyp133tnHU6+8mTNndvy+\nrQ/aeeedy8EHH9zp2NVXX1023XTT0tDQULbaaqvy5z//uY8m7b6urHHq1Kll1KhRpaGhoQwdOrR8\n6UtfKg899FAfTts1ra2tZcqUKWXUqFGlqampjBkzppx44oll8eLFHfep5WuwO+urtWuwlFL+8Ic/\nlDFjxpSGhoYybNiwcsQRR5S333674/O1vIeldH19/X0Pl/2amg/+WfZY0t7eXk4++eQydOjQ0tjY\nWHbZZZcPPf6MHj26nHrqqZ2OnX/++R2PPzvuuGP529/+1kcrqm2VUj7mV98DALBa8TOAAADJCEAA\ngGQEIABAMgIQACAZAQgAkIwABABIRgACACQjAAEAkhGAQBozZsyItdZaq9pjAFSdAARq3pIlS6o9\nAkBNEYBAzZk0aVIceeSRMXXq1Fh33XVjt912i4iIc889N8aOHRuDBg2KkSNHxg9+8INYuHBhRETc\nfffd8a1vfSv++9//RqVSiUqlEqeddlpERCxevDiOPvroWH/99WPQoEExYcKEuPvuuz9yhkqlEhdd\ndFHsscceMXDgwNhiiy1izpw58eyzz8akSZNi0KBBMXHixHjuuec6nXfjjTfG+PHjo6mpKcaMGROn\nn356LF26tMf/GwF8FAEI1KRLL700GhoaYvbs2XHhhRdGRERdXV38+te/jieeeCIuvfTSuPPOO+PY\nY4+NiIiJEyfGL3/5y2hpaYnXXnstXnvttTj66KMjIuLII4+MOXPmxFVXXRWPPvpo7LPPPvHFL34x\n5s+f/5EznHHGGXHQQQfFI488Eptvvnl84xvfiMMOOyxOOOGEePDBB6OUEkceeWTH/f/617/GQQcd\nFFOmTIknn3wyLrroopgxY0aceeaZvfRfCWAFCkCN2Xnnncu4ceM+9n7XXHNNWWeddTpuT58+vQwZ\nMqTTfV588cVSX19fXnnllU7Hd9lll3LCCSes8GtHRDnppJM6bs+ZM6dERLn44os7jl155ZWlqamp\n09f86U9/2unrXHbZZWX48OEfuxaAnjSg2gEK0B3bb7/9h47dcccdMW3atPj73/8era2tsXTp0li0\naFG88847MXDgwOV+ncceeyza2tpi00037XR88eLFsc4663zkDNtss03Hx0OHDo2IiLFjx3Y6tmjR\nomhtbY2WlpaYN29ezJ49u9Mrfm1tbR87I0BPE4BATRo0aFCn2//4xz9ijz32iMMPPzzOPPPMWHvt\ntePee++Nb3/727FkyZIVxtXChQujvr4+5s6dG/X19Z0+t+aaa37kDGussUbHx5VKZYXH2tvbO77X\n6aefHnvvvfeHvlZTU9NHfi+AniQAgdXC3Llzo729Pc4555yoq/vfjzdfffXVne7T0NAQbW1tnY6N\nGzcu2tra4s0334zPfe5zvTrj+PHj4+mnn45NNtmkV78PwMcRgMBqYZNNNon33nsvzj///Nhzzz07\n/eWQZTbccMNYuHBhzJo1K7bddtsYOHBgbLrppnHAAQfEQQcdFOecc06MGzcu/vWvf8WsWbNim222\nid13373HZjzllFNijz32iFGjRsXXvva1qKuri3nz5sXjjz8eP/nJT3rs+wB8HH8LGFgtbLvttnHu\nuefGWWedFVtvvXVcccUVMW3atE73mThxYnz/+9+P/fbbLz7xiU/E2WefHRER06dPj4MOOih+/OMf\nx2abbRZf+cpX4oEHHohRo0b16Iy77bZb3HTTTXHbbbfFpz71qfj0pz8d5513XowePbpHvw/Ax6mU\nUkq1hwAAoO94BRAAIBkBCACQjAAEAEhGAAIAJCMAAQCSEYAAAMkIQACAZAQgAEAyAhAAIBkBCACQ\njAAEAEhGAAIAJPN/2azjiqsaPX4AAAAASUVORK5CYII=\n']}127.0.0.1 - - [19/Jun/2018 23:46:27] "POST /oneVarNum HTTP/1.1" 200 -

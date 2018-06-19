@@ -1,4 +1,6 @@
 from flask import Flask, request, send_file, jsonify
+import matplotlib
+matplotlib.use('Agg')
 import csv
 import json
 import numpy as np
@@ -11,6 +13,11 @@ import collections
 from textblob import TextBlob
 
 application = Flask(__name__)
+
+#test display
+plt.plot([1,2,3])
+plt.show()
+
 
 @application.route("/")
 def hello():
@@ -61,6 +68,8 @@ def oneVarNum():
 
 
     srcData = {"srcList": srcList}
+    print(srcData)
+    print(type(srcData))
     return jsonify(srcData)
 
 @application.route("/oneVarMC", methods=['POST'])
