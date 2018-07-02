@@ -14,10 +14,6 @@ from textblob import TextBlob
 
 application = Flask(__name__)
 
-#test display
-plt.plot([1,2,3])
-plt.show()
-
 
 @application.route("/")
 def hello():
@@ -98,7 +94,7 @@ def oneVarMC():
     # no explode
     explode = (0, 0, 0, 0)
     fig1, ax1 = plt.subplots()
-    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    ax1.pie(sizes, explode=None, labels=labels, autopct='%1.1f%%',
             shadow=True, startangle=90)
     # Equal aspect ratio ensures that pie is drawn as a circle
     ax1.axis('equal')
