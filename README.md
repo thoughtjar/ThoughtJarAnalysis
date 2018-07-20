@@ -1,4 +1,4 @@
 # ThoughtJarAnalysis
 Data Analysis Service for Thought Jar
 
-&copy; 2018, Dave Ho, All Rights Reserved.
+&copy; 2018, Dave Ho.
